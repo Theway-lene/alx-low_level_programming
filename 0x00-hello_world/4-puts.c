@@ -1,11 +1,15 @@
 #include <stdio.h>
 
 /**
- * myputsass - this is the main function
- * this function prints out the string passed into it
+ * main - function to print out simple text
+ * this return the passed string
+ * Return: gives the value zero
 */
-void myputsass(void)
+int main(void)
 {
-	puts("Programming is like building a multilingual puzzle");
+
+	puts("\"Programming is line building a multilingual puzzle");
+
+	return (0);
 
 }
