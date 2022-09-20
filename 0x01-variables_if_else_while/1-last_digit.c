@@ -2,20 +2,23 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main function prints last character 
+/**
+ * main - function prints last character
  * Return: ends program
 */
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 
 	int b = n % 10;
 
 	if (b > 5)
-	{	
+	{
 		printf("Last digit of %d is %d and is greater than 5 \n", n, b);
 	}
 	else if (b == 0)
