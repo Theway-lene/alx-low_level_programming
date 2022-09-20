@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/*main function to print both caps and lower case
+/**
+ * main - function to print both caps and lower case
  * Return: ends program void
 */
 
@@ -13,7 +14,7 @@ int main(void)
 
 	for (a = 'A'; a <= 'Z'; a++)
 		putchar (a);
-	
+
 	putchar ('\n');
 
 	return (0);
