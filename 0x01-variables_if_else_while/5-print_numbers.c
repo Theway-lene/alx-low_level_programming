@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/* main function prints out numbers in base 10
+/**
+ * main - function prints out numbers in base 10
  * Return: void integer
 */
 
