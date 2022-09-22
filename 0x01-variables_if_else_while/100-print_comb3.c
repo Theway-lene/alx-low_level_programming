@@ -1,8 +1,9 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - function print combination of double digit numbers
- * Return: void to end function
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -10,22 +11,24 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = 48; a < 57; a++)
+	for (a = '0'; a <= '9';)
 	{
-		for (b = 49; b < 58; b++)
+		for (b = '1'; b <= '9';)
 		{
-			if (b > a)
-			{	putchar(a);
+			if (a != b && b > a)
+			{
+				putchar(a);
 				putchar(b);
-				if (a != 56 || b != 57)
-				putchar(',');
-				putchar(' ');
+				if (a != '8' || b != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			else if (b <= a)
-			{};
+			b++;
 		}
+		a++;
 	}
 	putchar('\n');
-
 	return (0);
 }
