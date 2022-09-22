@@ -1,16 +1,17 @@
 #include "main.h"
+
 /**
- *  * print_alphabet - Entry point
- *   *
- *    * Return: 0 Always (success)
- *     */
+ * print_alphabet - function defined
+ * Return: value not needed to be defined
+ */
+
 void print_alphabet(void)
 {
-		char w;
+	char a;
 
-			for (w = 'a'; w <= 'z'; w++)
-					{
-								_putchar(w);
-									}
-				_putchar('\n');
+	for (a = 'a'; a <= 'z'; a++)
+	{
+		_putchar(w);
+	}
+	_putchar('\n');
 }
